@@ -57,7 +57,7 @@ const getAllQuizzes = async (req , res) => {
 const getResult = async (req , res) => {
     try {
         const result = await QuizService.getResult(req.params.id);
-        console.log(result + " Bhai")
+        
         return res.status(200).json({
             success : true , 
             message : 'Answer fetched successfully .' , 

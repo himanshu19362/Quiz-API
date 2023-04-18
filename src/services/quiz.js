@@ -43,7 +43,7 @@ const getResult = async (id) => {
         return quiz.options[correctIndex];     
 
     } catch (error) {
-        throw error;
+        throw error.message;
     }    
 }
 

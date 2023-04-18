@@ -12,7 +12,7 @@ const startServer = () => {
 
     const limit = rateLimit({
         windowMs : 2 * 60 * 1000 , 
-        max : 5 , 
+        max : 10 , 
         message: 'Please try again after 2 minutes'        
     })
 
